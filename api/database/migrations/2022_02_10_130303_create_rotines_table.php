@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('rotine', function (Blueprint $table) {
+        Schema::create('rotines', function (Blueprint $table) {
             $table->id();
             $table->boolean('API CLIENT')->nullable();
             $table->boolean('SGBD');
@@ -36,6 +36,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('rotine');
+        Schema::dropIfExists('rotines');
     }
 };
